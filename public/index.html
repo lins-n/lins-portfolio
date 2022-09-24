@@ -6,6 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Collins Portfolio</title>
     <!-- <script src="Gradient.js" ></script> -->
+
+    <style>
+        /* text animation start */
+#animate__text {
+    margin: 20px 0;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  position: absolute;
+  width: 500px;
+  left: 45%;
+  margin-left: -225px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  
+}
+
+.word {
+  position: absolute;
+  width: 100rem;
+  opacity: 0;
+ 
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+    </style>
 </head>
 <body>
     
@@ -17,16 +114,20 @@
 
 
     <!-- Animation  -->
-    <div class="text">
-        <h1>I'm a </h1>
-        <h1>
-          <span class="word wisteria">developer.</span>
-          <span class="word belize">graphic - designer.</span>
-          <span class="word pomegranate">product - designer.</span>
-          <!-- <span class="word green">beautiful.</span>
-          <span class="word midnight">cheap.</span> -->
-        </h1>
-      </div>
+    <div class="animate__text">
+        <div class="text">
+            <h1>I'm a  </h1>
+            <h1>
+              <span class="word wisteria"> developer.</span>
+              <span class="word belize"> graphic - designer.</span>
+              <span class="word pomegranate"> product - designer.</span>
+              <!-- <span class="word green">beautiful.</span>
+              <span class="word midnight">cheap.</span> -->
+            </h1>
+          </div>
+    </div>
+
+   
 
       
     <!-- <script>
