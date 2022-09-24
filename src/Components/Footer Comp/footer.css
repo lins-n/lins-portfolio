@@ -1,0 +1,20 @@
+footer {
+    background-color: var(--color-primary);
+    color: #fff; 
+    padding: 1rem;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5rem;
+}
+
+footer a {
+    color: var(--color-bg);
+
+}
+
+.footer__logo {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    diaplay: inline-block;
+}
