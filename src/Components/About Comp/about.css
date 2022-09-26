@@ -91,6 +91,12 @@
         width: 65%;
         margin: 0 auto 3rem;
     }
+    .about__me-image {
+        border-radius: 2rem;
+        overflow: hidden;
+        transform: rotate(0);
+        transition: var(--transition);
+    }
     .about__cards {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
