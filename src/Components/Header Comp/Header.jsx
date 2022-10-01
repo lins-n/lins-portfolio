@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import me2 from '../../Assets/me2.png'
+import { Helmet } from 'react-helmet'
 
 import HeaderSocials from './HeaderSocials'
 
@@ -12,10 +12,15 @@ const Header = () => {
     
     <header >
       
+      
       <div className="container header__container">
         
         <h4> Hello I'm</h4>
         <h1> Collins Nudekor</h1>
+        <h3 style={{color:'#c0392b'}} > Developer | Product Designer</h3>
+       
+    
+    
         {/* <h5 className='text-light'> Graphic Designer and Product Designer </h5> */}
 
 

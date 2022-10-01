@@ -14,7 +14,7 @@ header {
 /* Call to Action Buttons */
 
 .cta {
-    margin-top: 6rem;
+    margin-top: 3rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
@@ -65,12 +65,24 @@ header {
 @media screen and (max-width:1024px) {
     header {
         height: 100vh;
+       
     }
 }
  /* Media Queries(Small Devices) */
  @media screen and (max-width:600px) {
     .header__socials, .scroll__down {
         display: none;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .header__socials, .scroll__down {
+        display: none;
+    }
+
+    header {
+        padding-top: 20rem;
     }
 }
 
