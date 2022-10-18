@@ -1,22 +1,26 @@
 import React from 'react'
 import './services.css'
-import img1 from '../../Assets/Images/img1.jpg'
 import img2 from '../../Assets/Images/img2.jpg'
-import img3 from '../../Assets/Images/img3.jpg'
 import img4 from '../../Assets/Images/img4.png'
 import img5 from '../../Assets/Images/img5.png'
 import img6 from '../../Assets/Images/img6.png'
 import img7 from '../../Assets/Images/img7.png'
-import img8 from '../../Assets/Images/img8.png'
 import img9 from '../../Assets/Images/img9.png'
 import img10 from '../../Assets/Images/img10.png'
 import img11 from '../../Assets/Images/img11.jpg'
-import img12 from '../../Assets/Images/img12.jpg'
 import img13 from '../../Assets/Images/img13.jpg'
 import img18 from '../../Assets/Images/img18.png'
 import img19 from '../../Assets/Images/img19.jpg'
 import img16 from '../../Assets/Images/img16.jpg'
 import img17 from '../../Assets/Images/img17.jpg'
+
+import img22 from '../../Assets/Images/img22.png'
+import img23 from '../../Assets/Images/img23.png'
+import img24 from '../../Assets/Images/img24.png'
+import img25 from '../../Assets/Images/img25.png'
+import fig from '../../Assets/Images/fig.png'
+import img27 from '../../Assets/Images/img27.png'
+
 
 
 const Services = () => {
@@ -48,6 +52,18 @@ const Services = () => {
       imgSrc: img16, },
     { id: 18,
       imgSrc: img18, },
+      { id: 19,
+        imgSrc: img22, },
+      { id: 20,
+        imgSrc: img23, },
+      { id: 21,
+        imgSrc: img24, },
+      { id: 22,
+        imgSrc: img25, },
+      { id: 23,
+        imgSrc: fig, },
+      { id: 24,
+        imgSrc: img27, },
   ]
     
   

@@ -8,14 +8,14 @@ import img5 from '../../Assets/Images/img5.png'
 import img6 from '../../Assets/Images/img6.png'
 import img7 from '../../Assets/Images/img7.png'
 import img8 from '../../Assets/Images/img8.png'
-import img9 from '../../Assets/Images/img9.png'
+import web from '../../Assets/Images/web.png'
 import img10 from '../../Assets/Images/img10.png'
 import img11 from '../../Assets/Images/img11.jpg'
-import img21 from '../../Assets/Images/img21.jpg'
+import linventory from '../../Assets/Images/linventory.png'
 import img20 from '../../Assets/Images/img20.jpg'
 import img17 from '../../Assets/Images/img17.jpg'
-import img15 from '../../Assets/Images/img15.jpg'
-import img19 from '../../Assets/Images/img19.jpg'
+import fig1 from '../../Assets/Images/fig1.png'
+import img13 from '../../Assets/Images/img13.jpg'
 
 
 
@@ -23,41 +23,41 @@ const Portfolio = () => {
 
   let data = [
     { id: 1,
-     imgSrc: img15,
-     title: 'Branding', 
-     github: 'https://github.com',
-     demo: 'https://dribble.com',},
+     imgSrc: fig1,
+     title: 'Bisty Student App', 
+     github: '',
+     demo: 'https://bit.ly/bitsy-prototype',},
     { id: 2,
-     imgSrc: img19,
-     title: 'Ui/UX Design', 
-     github: 'https://github.com',
-     demo: 'https://dribble.com', },
+     imgSrc: img13,
+     title: 'itFits Shoe App', 
+     github: 'https://github.com/lins-n/shoe-app',
+     demo: '', },
     { id: 3,
-      imgSrc: img21,
-      title: 'Logo Design', 
-      github: 'https://github.com',
-      demo: 'https://dribble.com', },
+      imgSrc: linventory,
+      title: 'Linventory App', 
+      github: 'https://github.com/lins-n/Linventory-App',
+      demo: '', },
     { id: 4,
-      imgSrc: img9,
-      title: 'Product Design', 
-      github: 'https://github.com',
-      demo: 'https://dribble.com', },
+      imgSrc: web,
+      title: 'Portfolio Website', 
+      github: 'https://github.com/lins-n/lins-portfolio',
+      demo: 'https://collinss.me', },
     { id: 5,
       imgSrc: img20,
-      title: 'Branding', 
-      github: 'https://github.com',
-      demo: 'https://dribble.com', },
+      title: 'Muse Music App', 
+      github: '',
+      demo: '', },
     { id: 6,
       imgSrc: img17,
-      title: 'Startups', 
-      github: 'https://github.com',
-      demo: 'https://dribble.com', },
+      title: 'Dryce Laundry App', 
+      github: 'https://github.com/Rquaicoo/dryce-mobile-client',
+      demo: '', },
     ]
 
   return (
     <section id='portfolio'>
            <h5> My Projects</h5>
-          <h2> Portfolio</h2>
+          <h2> Developer Portfolio</h2>
           <div className=' container portfolio__container'>
 
             {
