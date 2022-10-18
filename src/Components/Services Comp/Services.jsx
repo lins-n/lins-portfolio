@@ -13,7 +13,7 @@ import img18 from '../../Assets/Images/img18.png'
 import img19 from '../../Assets/Images/img19.jpg'
 import img16 from '../../Assets/Images/img16.jpg'
 import img17 from '../../Assets/Images/img17.jpg'
-
+import myth from '../../Assets/Images/myth.jpg'
 import img22 from '../../Assets/Images/img22.png'
 import img23 from '../../Assets/Images/img23.png'
 import img24 from '../../Assets/Images/img24.png'
@@ -64,6 +64,8 @@ const Services = () => {
         imgSrc: fig, },
       { id: 24,
         imgSrc: img27, },
+        { id: 25,
+          imgSrc: myth, },
   ]
     
   
