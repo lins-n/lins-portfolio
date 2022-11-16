@@ -100,7 +100,7 @@
   } */
 :root {
 
-    --color-bg: linear-gradient(0deg, rgb(3, 1, 11) 0%, rgb(10, 4, 34) 100%);
+    --color-bg: linear-gradient(0deg, rgb(3, 1, 11) 0%, rgb(9, 4, 32) 100%);
     /* --color-bg: #1b1c1d; */
     --color-bg1: rgba(31, 31, 56, 1);
     --color-bg-variant:#201352;

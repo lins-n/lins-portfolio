@@ -1,4 +1,6 @@
 import React from 'react'
+import {RiCloseFill} from 'react-icons/ri'; 
+
 import './services.css'
 import img2 from '../../Assets/Images/img2.jpg'
 import img4 from '../../Assets/Images/img4.png'
@@ -20,6 +22,10 @@ import img24 from '../../Assets/Images/img24.png'
 import img25 from '../../Assets/Images/img25.png'
 import fig from '../../Assets/Images/fig.png'
 import img27 from '../../Assets/Images/img27.png'
+import img28 from '../../Assets/Images/img28.png'
+import img29 from '../../Assets/Images/img29.png'
+import img30 from '../../Assets/Images/img30.jpg'
+import { useState } from 'react'
 
 
 
@@ -40,6 +46,8 @@ const Services = () => {
       imgSrc: img6, },
     { id: 7,
       imgSrc: img7, },
+    { id: 29,
+      imgSrc: img29, },
     { id: 8,
       imgSrc: img19, },
     { id: 9,
@@ -60,25 +68,43 @@ const Services = () => {
         imgSrc: img24, },
       { id: 22,
         imgSrc: img25, },
+      { id: 28,
+        imgSrc: img28, },
       { id: 23,
         imgSrc: fig, },
       { id: 24,
         imgSrc: img27, },
         { id: 25,
           imgSrc: myth, },
+      
+      { id: 30,
+        imgSrc: img30, },
   ]
+
+  const [model, setModel] = useState(false)
+  const [tempImgSrc, setTempImgSrc] = useState('')
+  const getImg = (imgSrc) => {
+    setTempImgSrc(imgSrc)
+    setModel(true)
+  }
+
     
   
-  return (
+  return (  
     <section id='services'>
 
           <h5> My Projects</h5>
           <h2> Portfolio</h2>
 
+      <div className={model? "model open" : "model"}>
+        <img src={tempImgSrc}/>
+        <RiCloseFill onClick={() => setModel(false)}/>
+      </div>
+
       <div className='gallery'>
         {data.map((item, index) => {
           return (
-            <div className='images' key={index}  >
+            <div className='images' key={index} onClick={() => getImg(item.imgSrc)} >
               <img src={item.imgSrc} alt='img'  className='images__width'/>
             </div>
           )
