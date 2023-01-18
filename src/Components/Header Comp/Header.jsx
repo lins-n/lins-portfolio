@@ -15,7 +15,7 @@ const Header = () => {
       
       <div className="container header__container">
         
-        <h4> Hello I'm</h4>
+        <h3> Hello I'm</h3>
         <h1> Collins Nudekor</h1>
         <h3 style={{color:'#c0392b'}} > Developer | Product Designer</h3>
        
@@ -34,7 +34,7 @@ const Header = () => {
       {/* <div className='me'>
           <img src={me2} alt="me" />
       </div> */}
-      <a href='#contact' className='scroll__down'> Scroll Down</a>
+        <a href='#contact' className='scroll__down'> Scroll Down</a>
 
       </div>
     </header>
