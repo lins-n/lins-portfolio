@@ -1,0 +1,88 @@
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.cards {
+  overflow: hidden;
+  /* padding: 10px; */
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 1rem;
+  
+}
+
+.card {
+    background: var(--color-portfolio);
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    padding: 2rem;
+    text-align: left;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    justify-content: center;
+    
+    /* transition: var(--transition); */
+}
+.card__content {
+  /* margin: 0 10px; */
+
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 300px;
+  }
+}
+  
+
+.card > small {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.reviewer {
+ padding-top: 10px;
+ color: var(--color-primary);
+ position: absolute; 
+ bottom: 0.5;
+ 
+ 
+}
+
+/*  */
+
+.cards:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.cards:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.cards:hover .outer {
+  animation-play-state: paused;
+}
+
+.outer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  animation: 35s slide infinite linear;
+  margin: 0 13px;
+  
+}
+
+/* .outer > div {
+ 
+} */

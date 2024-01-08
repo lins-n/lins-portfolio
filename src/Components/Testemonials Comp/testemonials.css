@@ -1,0 +1,92 @@
+/* .section-bg {
+    background-color: var(--color-portfolio);
+} */
+
+.test_container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 1.3rem;
+    
+}
+
+.test__left {
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper .card {
+    width: 30%;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    background-color: var(--color-portfolio);
+    border-radius: 1rem;
+    animation: animate 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+  }
+
+  .outer:hover .card{
+    animation-play-state: paused;
+  }
+  .wrapper .card:last-child{
+    animation-delay: calc(-3s * var(--delay));
+  }
+  @keyframes animate {
+    0%{
+      opacity: 0;
+      transform: translateY(100%) scale(0.5);
+    }
+    5%, 20%{
+      opacity: 0.4;
+      transform: translateY(100%) scale(0.7);
+    }
+    25%, 40%{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0%) scale(1);
+    }
+    45%, 60%{
+      opacity: 0.4;
+      transform: translateY(-100%) scale(0.7);
+    }
+    65%, 100%{
+      opacity: 0;
+      transform: translateY(-100%) scale(0.5);
+    }
+  }
+
+
+.add_test {
+    gap: 1.2rem;
+}
+
+.test__card {
+    background: var(--color-portfolio);
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    padding: 1.5rem;
+    text-align: left;
+    height: fit-content;  
+    width: 30%;
+    margin-left: 1.3rem;
+    /* transition: var(--transition); */
+}
+
+.test__content {
+    margin: 2rem 0 2.6rem;
+    color: var(--color-white);
+    font-style: italic;
+}
+
+.test__card h4 {
+    color: var(--color-primary);
+    margin-top: 1rem;
+}
