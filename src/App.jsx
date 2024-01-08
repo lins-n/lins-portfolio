@@ -8,6 +8,7 @@ import Portfolio from "./Components/Portfolio Comp/Portfolio";
 import Contact from "./Components/Contact Comp/Contact";
 import Footer from "./Components/Footer Comp/Footer";
 import Reviews from "./Components/Reviews Comp/Reviews";
+import Logo from "./Components/Logo Comp/Logo";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Nav />
       <About />
       <Experience />
+      <Logo />
       <Services />
       <Portfolio />
       {/* <Reviews/> */}
